@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Drahtbond-Modellierung in Abaqus</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f9f9f9;
+    }
+    h1, h2 {
+      color: #003366;
+    }
+    .image {
+      margin: 20px 0;
+      text-align: center;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+    .caption {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 5px;
+    }
+    ul {
+      margin-top: 15px;
+    }
+    .skills {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #e9f3ff;
+      border-left: 5px solid #0077cc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Drahtbond-Modellierung und Auswertung mit Abaqus</h1>
+
+  <div class="image">
+    <img src="Meshing of wire bond.png" alt="Drahtbond-Mesh">
+    <div class="caption">Abbildung 1: Vernetzung der Drahtbond-Baugruppe</div>
+  </div>
+
+  <div class="image">
+    <img src="Wirebond.png" alt="Drahtbond-Schnittmodell">
+    <div class="caption">Abbildung 2: Aufbau und Materialien der Drahtbondverbindung</div>
+  </div>
+
+  <h2>Wesentliche Erkenntnisse</h2>
+  <ul>
+    <li>Unterschiedliche Materialien und Dicken wurden in der Metallisierungsschicht des Drahtbonds verwendet.</li>
+    <li>Verschiedene Netzgrößen wurden in den Interconnects eingesetzt, um die plastische Dehnungsvariation und die Sperrschichttemperatur zu untersuchen (Mesh-Konvergenzstudie).</li>
+    <li>Ein automatisiertes Python-Skript wurde entwickelt, um wichtige Feldausgaben (CEEQ, PEEQ, MISES, NT11) aus den Abaqus ODB-Dateien zu extrahieren und für die Analyse der Drahtbondverbindungen zu verwenden.</li>
+  </ul>
+
+  <div class="skills">
+    <strong>Verwendete Tools:</strong> Abaqus 2023, Abaqus Python-Scripting, Git
+  </div>
+
+</body>
+</html>
