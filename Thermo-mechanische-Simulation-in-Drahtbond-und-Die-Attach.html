@@ -13,13 +13,18 @@
       color: #003366;
     }
     .image {
-      margin: 20px 0;
-      text-align: center;
+     margin: 20px 0;
+    text-align: center;
     }
     .image img {
-      max-width: 100%;
       height: auto;
       border: 1px solid #ccc;
+    }
+    .image.full img {
+      max-width: 100%;
+    }
+    .image.medium img {
+      max-width: 70%;
     }
     .caption {
       font-size: 0.9em;
@@ -49,12 +54,12 @@
     </div>
   </div>
 
-  <div class="image">
-    <img src="Meshing of wire bond.png" alt="Drahtbond-Mesh" style="max-width: 40%; height: auto;">
-    <div class="caption">
-      Abbildung 2: Lokale Vernetzungsverfeinerung im Drahtbondbereich zur besseren Abbildung der Spannungskonzentrationen<br>
-      Referenz: Reliability Tests on Bonding Wire Connections for Power Electronics Applications, durchgeführt von Kshitij Kolas, Fraunhofer
-    </div>
+  <div class="image medium">
+  <img src="Meshing of wire bond.png" alt="Drahtbond-Mesh">
+  <div class="caption">
+    Abbildung 2: Lokale Vernetzungsverfeinerung im Drahtbondbereich zur besseren Abbildung der Spannungskonzentrationen<br>
+    Referenz: Reliability Tests on Bonding Wire Connections for Power Electronics Applications, durchgeführt von Kshitij Kolas, Fraunhofer
+  </div>
   </div>
 
   <h2>Analyse und Simulationsergebnisse</h2>
